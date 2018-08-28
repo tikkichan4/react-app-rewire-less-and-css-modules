@@ -15,8 +15,6 @@ function createRewireLess(lessLoaderOptions = {}) {
       rule => String(rule.test) === String(/\.css$/)
     );
 
-    console.log(cssRules.loader.map(v => v));
-
     let lessRules;
     let lessRulesModules;
     if (env === "production") {
